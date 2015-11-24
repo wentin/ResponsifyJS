@@ -14,7 +14,7 @@ The project is currently under development. I will add more details soon!
 
 responsify.js does the following:
  1. it allows you define a hot area on an image using `data-focus-xxx` tag
- 2. it takes the hot area info from the image, calcuate the image's container's size, resize and position the image in the right place, making sure the hot area is always in view and in the best position possible.
+ 2. it takes in the focus area data from the image, calcuate the image's container's size, resize and position the image accordingly, make sure the focus area is always in view and in the best position possible.
 
 ### How to use
  1. add focus area data to the img tag, `data-focus-left` is the focus area's left position comparing to the image's full width, in decimal. For example if the full width is 300, the focus area's left is 90, then the `data-focus-left` should be 90/300 = 0.3
