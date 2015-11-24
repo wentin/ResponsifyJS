@@ -26,7 +26,7 @@ responsify.js does the following:
  2. embed the responsify.js in your html
  
  ``` 
-    <script src="js/responsify.js"></script>
+    <script src="responsify.js"></script>
  ``` 
  3. call responsify function when window object is loaded
  
