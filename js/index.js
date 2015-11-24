@@ -64,8 +64,9 @@
   });
   };
 }( jQuery ));
-
-$('.wrapper').responsify();
+$(window).load(function() {
+  $('.wrapper').responsify();
+});
 $(window).resize(function(){
   $('.wrapper').responsify();
 })
