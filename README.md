@@ -13,7 +13,7 @@ The project is currently under development. I will add more details soon!
 ### What it does
 
 responsify.js does the following:
- 1. it allows you define a hot area on an image using `data-focus-xxx` tag
+ 1. it allows you define a focus area on an image using `data-focus-xxx` tag
  2. it takes in the focus area data from the image, calcuate the image's container's size, resize and position the image accordingly, make sure the focus area is always in view and in the best position possible.
 
 ### How to use
