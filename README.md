@@ -2,7 +2,7 @@
 
 `A jquery library that makes images truly responsive, without sacrificing anyone's face :D`
 
-When we use full screen images or full width images on web design, often in some edge cases, a group shot with end up being cut off on people's faces, a nice photography following "rule of third" will end up with on object in view. Responsive images face the challenge of how to keep the neccessary objects/area in view? This jquery plugin is here to help.
+When we use full screen images or full width images on web design, often in some edge cases, a group shot with end up being cut off on people's faces, a nice photography following "rule of third" will end up with no object in view. Responsive images face the challenge of how to keep the neccessary objects/area in view? This jquery plugin is here to help.
 
 ### Demo
 
