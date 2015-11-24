@@ -6,14 +6,14 @@
           fx1, fy1, fx2, fy2,
           width, height, top, left;
   
-      owidth = $('img', this).width();
-      oheight = $('img', this).height();
-      twidth = $(this).width();
-      theight = $(this).height();
-      fx1 = Number($('img', this).attr('data-focus-left'));
-      fy1 = Number($('img', this).attr('data-focus-top'));
-      fx2 = Number($('img', this).attr('data-focus-right'));
-      fy2 = Number($('img', this).attr('data-focus-bottom'));
+      owidth = $(this).width();
+      oheight = $(this).height();
+      twidth = $(this).parent().width();
+      theight = $(this).parent().height();
+      fx1 = Number($(this).attr('data-focus-left'));
+      fy1 = Number($(this).attr('data-focus-top'));
+      fx2 = Number($(this).attr('data-focus-right'));
+      fy2 = Number($(this).attr('data-focus-bottom'));
       if( owidth/oheight > twidth/theight ) {
         var fwidth = (fx2-fx1) * owidth;
         if ( fwidth/oheight > twidth/theight ) {
@@ -51,10 +51,10 @@
           left = 0;
         }
       }
-      $(this).css({
+      $(this).parent().css({
         "overflow": "hidden"
       })
-      $('img', this).css({
+      $(this).css({
         "position": "relative",
         "height": height,
         "width": width,
@@ -65,8 +65,8 @@
   };
 }( jQuery ));
 $(window).load(function() {
-  $('.wrapper').responsify();
+  $('img').responsify();
 });
 $(window).resize(function(){
-  $('.wrapper').responsify();
+  $('img').responsify();
 })
