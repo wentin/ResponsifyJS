@@ -1,0 +1,67 @@
+(function ( $ ) {
+  $.fn.responsify = function() { 
+    return this.each(function() {
+      var owdith, oheight,
+          twidth, theight,
+          fx1, fy1, fx2, fy2,
+          width, height, top, left;
+  
+      owidth = $('img', this).width();
+      oheight = $('img', this).height();
+      twidth = $(this).width();
+      theight = $(this).height();
+      fx1 = Number($('img', this).attr('data-focus-left'));
+      fy1 = Number($('img', this).attr('data-focus-top'));
+      fx2 = Number($('img', this).attr('data-focus-right'));
+      fy2 = Number($('img', this).attr('data-focus-bottom'));
+      if( owidth/oheight > twidth/theight ) {
+        var fwidth = (fx2-fx1) * owidth;
+        if ( fwidth/oheight > twidth/theight ) {
+          height = oheight*twidth/fwidth;
+          width = owidth*twidth/fwidth;
+          left = -fx1*width;
+          top = (theight-height)/2;
+        } else {
+          height = theight;
+          width = theight*owidth/oheight;
+          left = twidth/2 - (fx1 + fx2)*width/2;
+          // if left > 0, it will leave blank on the left, so set it to 0;
+          left = left>0?0:left;
+          top = 0;
+        }
+      }
+      else {
+        var fheight = (fy2-fy1) * oheight;
+        if ( fheight/owidth > theight/twidth ) {
+          width = owidth*theight/fheight;
+          height = oheight*theight/fheight;
+          top = -fy1*height;
+          // console.log(top);
+          left = (twidth-width)/2;
+        } else {
+          width = twidth;
+          height = twidth*oheight/owidth;
+          top = theight/2 - (fy1 + fy2)*height/2;
+          // if top > 0, it will leave blank on the top, so set it to 0;
+          top = top>0?0:top; 
+          left = 0;
+        }
+      }
+      $(this).css({
+        "overflow": "hidden"
+      })
+      $('img', this).css({
+        "position": "relative",
+        "height": height,
+        "width": width,
+        "left": left,
+        "top": top
+      })
+  });
+  };
+}( jQuery ));
+
+$('.wrapper').responsify();
+$(window).resize(function(){
+  $('.wrapper').responsify();
+})
