@@ -27,6 +27,8 @@
           left = twidth/2 - (fx1 + fx2)*width/2;
           // if left > 0, it will leave blank on the left, so set it to 0;
           left = left>0?0:left;
+          // if width - left < twidth, it will leave blank on the right, so set left = width - twidth
+          left = (twidth - left - width)>0?(twidth-width):left
           top = 0;
         }
       }
@@ -44,6 +46,8 @@
           top = theight/2 - (fy1 + fy2)*height/2;
           // if top > 0, it will leave blank on the top, so set it to 0;
           top = top>0?0:top; 
+          // if height - top < theight, it will leave blank on the bottom, so set top = height - theight
+          top = (theight - top - height)>0?(theight-height):top
           left = 0;
         }
       }
