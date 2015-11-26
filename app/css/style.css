@@ -1,0 +1,55 @@
+.wrapper {
+  width: 640px;
+  margin: 20px auto;
+}
+.canvasWrapper {
+  width: 640px;
+  height: 640px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.10);
+  border-radius: 8px;
+  position: relative;
+}
+.canvasWrapper p {
+  line-height: 20px;
+  font-family: 'Source Code Pro';
+  font-size: 12px;
+  color: #222222;
+  top: 290px;
+  left: 220px;
+  position: relative;
+}
+canvas {
+  cursor: crosshair;
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  left: 20px;
+  border: 1px solid #DDDDDD;
+}
+#button {
+  display: inline-block;
+  font-family: 'Source Code Pro';
+  font-size: 12px;
+  color: #F7F7F7;
+  line-height: 40px;
+  background: #222222;
+  border-radius: 4px;
+  padding: 0 20px;
+  position: absolute;
+  right: -204px;
+  bottom: 0px;
+  cursor: pointer;
+}
+textarea {
+  font-family: 'Source Code Pro';
+  color: #222222;
+  font-size: 12px;
+  line-height: 20px;
+  width: 600px;
+  padding: 16px 20px;
+  margin-top: 20px;
+  border: none;
+  background: #F7F7F7;
+  border-radius: 4px;
+}

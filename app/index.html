@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interative Image Focus Area app</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="canvasWrapper">
+            <p>
+              1. Drag & drop image<br>
+              2. Select area<br>
+              3. Copy the generated code
+              
+            </p>
+            <canvas id="my-canvas" width="600" height="600"></canvas>
+            <div id="button">SAVE CANVAS AS IMAGE</div>
+        </div>
+        <textarea id="code">
+ data-focus-left="0" data-focus-top="0" data-focus-right="1" data-focus-bottom="1"
+        </textarea>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
