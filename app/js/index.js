@@ -5,6 +5,10 @@
         drag = false,
         img = document.createElement("img"),
         imageName,
+        left = 0,
+        top = 0, 
+        right = 1,
+        bottom = 1,
         canvasWidth = canvas.width,
         canvasHeight = canvas.height,
         imgWidth = canvasWidth, 
@@ -22,8 +26,7 @@
 
     function updateResult(name, left, top, right, bottom) {
 		var dataFocus = '<img src="' 
-			+ name 
-			+ '" alt=""' + ' data-focus-left="' 
+			+ name + '" alt=""' + ' data-focus-left="' 
 			+ left + '" data-focus-top="' 
 			+ top + '" data-focus-right="' 
 			+ right + '" data-focus-bottom="' 
@@ -65,6 +68,7 @@
                 };
                 reader.readAsDataURL(file);
                 imageName = file.name;
+                updateResult(imageName, 0, 0, 1, 1);
             }
         }
         evt.preventDefault();
@@ -89,10 +93,10 @@
 
             rect.w = (e.layerX) - rect.startX;
             rect.h = (e.layerY) - rect.startY;
-            var left = rect.startX / imgWidth;
-            var top = rect.startY / imgHeight;
-            var right = (rect.w + rect.startX) / imgWidth;
-            var bottom = (rect.h + rect.startY) / imgHeight;
+            left = rect.startX / imgWidth;
+            top = rect.startY / imgHeight;
+            right = (rect.w + rect.startX) / imgWidth;
+            bottom = (rect.h + rect.startY) / imgHeight;
             if (imageName) {
             	updateResult(imageName, left.toFixed(2), top.toFixed(2), right.toFixed(2), bottom.toFixed(2));
 			}
@@ -102,9 +106,9 @@
     }, false);
 
     // Save image
-    var saveImage = document.getElementById("button");
+    /*var saveImage = document.getElementById("button");
     saveImage.addEventListener("click", function(evt) {
         window.open(canvas.toDataURL("image/png"));
         evt.preventDefault();
-    }, false);
+    }, false);*/
 })();

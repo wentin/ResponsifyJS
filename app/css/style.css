@@ -27,7 +27,7 @@ canvas {
   left: 20px;
   border: 1px solid #DDDDDD;
 }
-#button {
+/*#button {
   display: inline-block;
   font-family: 'Source Code Pro';
   font-size: 12px;
@@ -40,7 +40,7 @@ canvas {
   right: -204px;
   bottom: 0px;
   cursor: pointer;
-}
+}*/
 textarea {
   font-family: 'Source Code Pro';
   color: #222222;
