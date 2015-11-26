@@ -4,26 +4,30 @@
         rect = {},
         drag = false,
         img = document.createElement("img"),
+        imageName,
         canvasWidth = canvas.width,
         canvasHeight = canvas.height,
-        imgWidth, imgHeight,
+        imgWidth = canvasWidth, 
+        imgHeight = canvasHeight,
         clearCanvas = function() {
             // context.clearRect(0, 0, canvasWidth, canvasHeight);
 	        context.fillStyle = "#ffffff";
 	        context.fillRect(0, 0, canvasWidth, canvasHeight);
         };
 
-
-    // Adding instructions
-    // context.fillText("Drop an image onto the canvas", 240, 300);
-
     function drawImg() {
         clearCanvas();
         context.drawImage(img, 0, 0, imgWidth, imgHeight);
     }
 
-    function updateResult(left, top, right, bottom) {
-        var dataFocus = ' data-focus-left="' + left + '" data-focus-top="' + top + '" data-focus-right="' + right + '" data-focus-bottom="' + bottom + '"';
+    function updateResult(name, left, top, right, bottom) {
+		var dataFocus = '<img src="' 
+			+ name 
+			+ '" alt=""' + ' data-focus-left="' 
+			+ left + '" data-focus-top="' 
+			+ top + '" data-focus-right="' 
+			+ right + '" data-focus-bottom="' 
+			+ bottom + '"/>';
         document.getElementById('code').value = dataFocus;
     }
 
@@ -60,6 +64,7 @@
                     img.src = evt.target.result;
                 };
                 reader.readAsDataURL(file);
+                imageName = file.name;
             }
         }
         evt.preventDefault();
@@ -80,16 +85,17 @@
     // Draw, if mouse button is pressed
     canvas.addEventListener("mousemove", function(e) {
         if (drag) {
+            drawImg();
+
             rect.w = (e.layerX) - rect.startX;
             rect.h = (e.layerY) - rect.startY;
-            console.log('e', e);
-            console.log('this', this.offsetLeft)
-            drawImg();
             var left = rect.startX / imgWidth;
             var top = rect.startY / imgHeight;
             var right = (rect.w + rect.startX) / imgWidth;
             var bottom = (rect.h + rect.startY) / imgHeight;
-            updateResult(left.toFixed(2), top.toFixed(2), right.toFixed(2), bottom.toFixed(2));
+            if (imageName) {
+            	updateResult(imageName, left.toFixed(2), top.toFixed(2), right.toFixed(2), bottom.toFixed(2));
+			}
             context.fillStyle = "rgba(255, 0, 0, 0.3)";
             context.fillRect(rect.startX, rect.startY, rect.w, rect.h);
         }
