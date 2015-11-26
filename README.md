@@ -17,7 +17,9 @@ responsify.js does the following:
  2. it takes in the focus area data from the image, calcuate the image's container's size, resize and position the image accordingly, make sure the focus area is always in view and in the best position possible.
 
 ### How to use
- 1. add focus area data to the img tag, `data-focus-left` is the focus area's left position comparing to the image's full width, in decimal. For example if the full width is 300, the focus area's left is 90, then the `data-focus-left` should be 90/300 = 0.3. I will make a web-based interactive tool to make this process much easier. Stay tuned.
+ 1. add focus area data to the img tag, `data-focus-left` is the focus area's left position comparing to the image's full width, in decimal. For example if the full width is 300, the focus area's left is 90, then the `data-focus-left` should be 90/300 = 0.3. 
+    
+   You can use this interactive web app to generate the data [http://responsifyjs.space/app/](http://responsifyjs.space/app/)
  
  ```
     <img src="image.png" alt="" 
