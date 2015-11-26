@@ -23,8 +23,8 @@ canvas {
   cursor: crosshair;
   position: absolute;
   z-index: 999;
-  top: 20px;
-  left: 20px;
+  top: 19px;
+  left: 19px;
   border: 1px solid #DDDDDD;
 }
 /*#button {
