@@ -228,3 +228,23 @@ pre {
     border-radius: 4px;
     margin-bottom: 16px;
 }
+.gifs {
+  width: 1000px;
+  margin: 32px auto;
+}
+.gifs h2 {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 400;
+}
+.gifs h2 strong {
+  font-weight: bold;
+}
+.gifs .with, .gifs .without {
+  width: 480px;
+  height: 382px;
+  float: left;
+}
+.gifs .with {
+  margin-right: 40px;
+}
