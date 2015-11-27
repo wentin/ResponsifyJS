@@ -1,15 +1,29 @@
+body {
+  font-family: 'Source Code Pro';
+}
+.clr {
+  clear: both;
+}
+header.demo {
+  /* border: solid 2px wheat; */
+}
 .row {
   width: 100%;
   float: left;
+  position: relative;
 }
 .row a {
   display: block;
   overflow: hidden;
   float: left;
+  box-sizing: border-box;
+  /* border: solid 2px wheat; */
+  background-color: wheat;
 }
 .img1 {
   width: 66.67%;
   height: 40vh;
+  position: relative;
 }
 .img2 {
   width: 33.33%;
@@ -46,4 +60,170 @@
 .img11 {
   width: 25%;
   height: 40vh;
+}
+header .card {
+  font-family: 'Source Code Pro';
+  position: absolute;
+  z-index: 9;
+}
+header .card h1 {
+  display: inline-block;
+  border-radius: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: 36px;
+  padding: 0 18px;
+}
+header .instruction.card {
+  left: 20px;
+  top: 20px;
+}
+header .instruction.card h1 {
+  background: #35195B;
+  color: #F2EDC5;
+}
+header .instruction.card p {
+  color: #35195B;
+  background: rgba(242, 237, 197, 0.85);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  width: 364px;
+  padding: 12px 18px;
+  margin-top: 6px;
+}
+header .instruction.card p strong {
+  font-weight: bold;
+}
+header .git.card {
+  right: 20px;
+  top: 20px;
+}
+header .git.card h1 {
+  background: #45252A;
+  color: #FFF4E2;
+  float: left;
+}
+header .share.card {
+  right: 20px;
+  top: 20px;
+}
+header .share.card h1 {
+  background: #320F0B;
+  color: #FFDF73;
+  float: left;
+}
+.icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.icon:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.icon:before {
+  font-size: 20px;
+  display: block;
+  width: 34px;
+  text-align: center;
+  line-height: 34px;
+  font-family: 'responsifyjs' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+.icon.github {
+  background: #FFF4E2;
+  border: solid 1px #45252A;
+}
+.icon.github:before {
+  content: "\e902";
+  color: #45252A;
+}
+.icon.facebook {
+  background: #FFDF73;
+  border: solid 1px #320F0B;
+}
+.icon.facebook:before {
+  content: "\e903";
+  color: #320F0B;
+  font-size: 28px;
+}
+.icon.twitter {
+  background: #FFDF73;
+  border: solid 1px #320F0B;
+}
+.icon.twitter:before {
+  content: "\e900";
+  color: #320F0B;
+}
+main {
+  padding-top: 32px;
+  width: 720px;
+  margin: 0 auto;
+  font-family: 'Source Code Pro';
+}
+main h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.4px;
+  background: #000000;
+  border-radius: 32px;
+  line-height: 36px;
+  height: 36px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto 16px auto;
+}
+main p {
+  font-weight: regular;
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+main a {
+  color: #3D76C2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+main ol,
+main ul {
+  line-height: 24px;
+}
+main ol li{
+  list-style: decimal;
+  list-style-position: inside;
+  margin-bottom: 16px;
+}
+main ul li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-bottom: 16px;
+}
+main h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+pre {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 16px 20px;
+    background: #F7F7F7;
+    border-radius: 4px;
+    margin-bottom: 16px;
 }
