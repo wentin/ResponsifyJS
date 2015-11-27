@@ -4,7 +4,7 @@ body {
 .clr {
   clear: both;
 }
-header.demo {
+header#demo {
   /* border: solid 2px wheat; */
 }
 .row {
