@@ -38,7 +38,6 @@
           width = owidth*theight/fheight;
           height = oheight*theight/fheight;
           top = -fy1*height;
-          // console.log(top);
           left = (twidth-width)/2;
         } else {
           width = twidth;

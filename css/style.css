@@ -1,0 +1,49 @@
+.row {
+  width: 100%;
+  float: left;
+}
+.row a {
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+.img1 {
+  width: 66.67%;
+  height: 40vh;
+}
+.img2 {
+  width: 33.33%;
+  height: 40vh;
+}
+.img3 {
+  width: 33.33%;
+  height: 60vh;
+}
+.img4 {
+  width: 25%;
+  height: 60vh;
+}
+.img5, .img6 {
+  width: 41.67%;
+  height: 30vh;
+}
+.img7 {
+  height: 70vh;
+  width: 16.66%;
+}
+.img8 {
+  height: 70vh;
+  width: 16.67%;
+}
+.img9 {
+  width: 66.67%;
+  height: 30vh;
+}
+.img10 {
+  width: 41.67%;
+  height: 40vh;
+}
+.img11 {
+  width: 25%;
+  height: 40vh;
+}

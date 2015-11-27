@@ -90,7 +90,7 @@
     canvas.addEventListener("mousemove", function(e) {
         if (drag) {
             drawImg();
-
+            
             rect.w = (e.layerX) - rect.startX;
             rect.h = (e.layerY) - rect.startY;
             left = rect.startX / imgWidth;
