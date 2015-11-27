@@ -166,6 +166,7 @@ header .share.card h1 {
 }
 main {
   padding-top: 32px;
+  padding-bottom: 100px;
   width: 720px;
   margin: 0 auto;
   font-family: 'Source Code Pro';
