@@ -182,7 +182,7 @@ main h1 {
   height: 36px;
   width: 200px;
   text-align: center;
-  margin: 0 auto 16px auto;
+  margin-bottom: 16px;
 }
 main p {
   font-weight: regular;
