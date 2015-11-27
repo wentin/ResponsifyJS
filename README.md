@@ -6,7 +6,7 @@ When images are used in a responsive container on web design, because of the con
 
 ### Demo
 
-[http://responsifyjs.space/](http://responsifyjs.space/)
+[http://responsifyjs.space/#demo](http://responsifyjs.space/#demo)
 
 ### App
 
