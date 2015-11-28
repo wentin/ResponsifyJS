@@ -105,6 +105,16 @@ header .git.card h1 {
   color: #FFF4E2;
   float: left;
 }
+header .app.card {
+  left: 20px;
+  top: 20px;
+}
+header .app.card h1 {
+  background: #884F67;
+  color: #FFFEDF;
+  float: left;
+}
+
 header .share.card {
   right: 20px;
   top: 20px;
@@ -120,10 +130,11 @@ header .share.card h1 {
   height: 36px;
   border-radius: 50%;
   text-decoration: none;
+  box-sizing: border-radius;
 }
 .icon:hover {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .icon:before {
   font-size: 18px;
@@ -139,13 +150,21 @@ header .share.card h1 {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
-.icon.github {
+.card .icon.github {
   background: #FFF4E2;
   border: solid 1px #45252A;
 }
 .icon.github:before {
   content: "\e902";
   color: #45252A;
+}
+.icon.export {
+  background: #FFFEDF;
+  border: solid 1px #884F67;
+}
+.icon.export:before {
+  content: "\e901";
+  color: #884F67;
 }
 .icon.facebook {
   background: #FFDF73;
@@ -181,7 +200,7 @@ main h1 {
   width: 200px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 main p {
   font-weight: regular;
@@ -252,6 +271,34 @@ pre {
 footer {
   width: 720px;
   margin: 32px auto;
+}
+footer .share {
+  text-align: center;
+  padding-bottom: 60px;
+}
+footer .share h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+footer .share .icon {
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: solid 1px black;
+}
+footer .share .icon.facebook {
+  margin-right: 10px;
+}
+footer .share .icon:before {
+  color: black;
+  font-size: 32px;
+  width: 80px;
+  line-height: 80px;
 }
 
 @media screen and (max-width: 1040px) {

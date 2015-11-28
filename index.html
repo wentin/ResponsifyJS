@@ -47,9 +47,13 @@ Resize the browser window to see how the images adapt to responsive layout; clic
     </a>
   </div>
   <div class="row">
+    <div class="app card">
+      <h1>APP</h1>
+      <a href="app/" target="_blank" class="icon export"></a>
+    </div>
     <div class="share card">
       <h1>SHARE</h1>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//responsifyjs.space/" target="_blank" class="icon facebook"></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//responsifyjs.space/" onclick="fbsw=window.open(this.href,'fbs','height=300,width=500,top='+((screen.height/2)-150)+',left='+((screen.width/2)-250));if(window.focus){fbsw.focus()}return false;" target="_blank" class="icon facebook"></a>
       <a href="https://twitter.com/intent/tweet?text=A jquery plugin that makes images truly responsive &via=DesignJokes&url=http://responsifyjs.space/&hashtags=ResponsifyJS" target="_blank" class="icon twitter"></a>
     </div>
     <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/6.jpg" target="_blank" class="img7">
@@ -171,6 +175,11 @@ Resize the browser window to see how the images adapt to responsive layout; clic
 </ul>
 </main>
 <footer>
+  <div class="share">
+    <h3>SHARE</h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//responsifyjs.space/" onclick="fbsw=window.open(this.href,'fbs','height=300,width=500,top='+((screen.height/2)-150)+',left='+((screen.width/2)-250));if(window.focus){fbsw.focus()}return false;" target="_blank" class="icon facebook"></a>
+    <a href="https://twitter.com/intent/tweet?text=A jquery plugin that makes images truly responsive &via=DesignJokes&url=http://responsifyjs.space/&hashtags=ResponsifyJS" target="_blank" class="icon twitter"></a>
+  </div>
   <div id="disqus_thread"></div>
   <script>
   /**
