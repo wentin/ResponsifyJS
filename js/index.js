@@ -1,6 +1,6 @@
 $(window).load(function() {
-  $('img').responsify();
+  $('a img').responsify();
 });
 $(window).resize(function(){
-  $('img').responsify();
+  $('a img').responsify();
 })
