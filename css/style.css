@@ -194,6 +194,7 @@ main p {
 main a {
   color: #3D76C2;
   text-decoration: none;
+    word-wrap: break-word;
 }
 a:hover {
   text-decoration: underline;
@@ -227,6 +228,7 @@ pre {
     background: #F7F7F7;
     border-radius: 4px;
     margin-bottom: 16px;
+    word-wrap: break-word;
 }
 .gifs {
   width: 1000px;
@@ -251,4 +253,83 @@ pre {
 footer {
   width: 720px;
   margin: 32px auto;
+}
+
+@media screen and (max-width: 1040px) {
+  .gifs {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .gifs .with, .gifs .without {
+    width: 48%;
+    height: auto;
+    float: left;
+  }
+  .gifs div img {
+    width: 100%;
+    height: auto;
+  }
+  .gifs .with {
+    margin-right: 4%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .img1 {
+    width: 66.67%;
+    height: 30vh;
+  }
+  .img2 {
+    width: 33.33%;
+    height: 30vh;
+  }
+
+  .img3 {
+    width: 33.33%;
+    height: 40vh;
+  }
+  .img4 {
+    width: 33.33%;
+    height: 40vh;
+  }
+  .img5 {
+    width: 33.33%;
+    height: 20vh;
+  }
+  .img6 {
+    width: 33.33%;
+    height: 20vh;
+  }  
+  .img7 {
+    width: 25%;
+    height: 50vh;
+  }
+  .img8 {
+    width: 25%;
+    height: 50vh;
+  }
+  .img9 {
+    width: 25%;
+    height: 30vh;
+  }
+  .img10 {
+    width: 25%;
+    height: 30vh;
+  }
+  .img11 {
+    width: 50%;
+    height: 20vh;
+  }
+  header .instruction.card p {
+    width: 40%;
+  }
+  main {
+    width: 92%;
+    margin: 0 4%;
+  }
+  footer {
+    width: 92%;
+    margin: 0 4%;
+  }
 }
