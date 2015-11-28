@@ -166,7 +166,6 @@ header .share.card h1 {
 }
 main {
   padding-top: 32px;
-  padding-bottom: 100px;
   width: 720px;
   margin: 0 auto;
   font-family: 'Source Code Pro';
@@ -181,6 +180,7 @@ main h1 {
   line-height: 36px;
   height: 36px;
   width: 200px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -247,4 +247,8 @@ pre {
 }
 .gifs .with {
   margin-right: 40px;
+}
+footer {
+  width: 720px;
+  margin: 32px auto;
 }
