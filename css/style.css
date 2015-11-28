@@ -277,11 +277,11 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
   .img1 {
-    width: 66.67%;
+    width: 33.33%;
     height: 30vh;
   }
   .img2 {
-    width: 33.33%;
+    width: 66.67%;
     height: 30vh;
   }
   .img3 {
@@ -321,7 +321,9 @@ footer {
     height: 20vh;
   }
   header .instruction.card p {
-    width: 40%;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    margin-top: 8px;
   }
   main {
     width: 92%;
