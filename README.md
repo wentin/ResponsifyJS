@@ -24,11 +24,13 @@ Responsify.js does the following:
  1. It allows you define a focus area on an image using `data-focus-xxx` tag
  2. It takes in the focus area data from the image, calcuate the image's container's size, resize and position the image accordingly, make sure the focus area is always in view and in the best position possible.
 
-Responsive image **with** responsify.js
-* [view gif](http://wentin.github.io/ResponsifyJS/comparison/with.gif)     |     [play it yourself](http://wentin.github.io/ResponsifyJS/comparison/with-responsify-js/)
+* Responsive image **with** responsify.js
 
-Responsive image **without** responsify.js
-* [view gif](http://wentin.github.io/ResponsifyJS/comparison/without.gif)    |      [play it yourself](http://wentin.github.io/ResponsifyJS/comparison/without-responsify-js/)
+![with-s](https://cloud.githubusercontent.com/assets/2474904/11459461/dccd59b6-96a4-11e5-81c6-5b16c7d30a23.gif) [play it yourself](http://wentin.github.io/ResponsifyJS/comparison/with-responsify-js/)
+
+* Responsive image **without** responsify.js
+
+![without-s](https://cloud.githubusercontent.com/assets/2474904/11459460/dccd53bc-96a4-11e5-8a33-bea161ef60a9.gif) [play it yourself](http://wentin.github.io/ResponsifyJS/comparison/without-responsify-js/)
 
 ### How to use
  1. Use this interactive web app to generate the focus area data [http://responsifyjs.space/app/](http://responsifyjs.space/app/)
