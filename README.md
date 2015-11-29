@@ -1,8 +1,8 @@
 # Responsify.js
 
-`A jquery plugin that makes images truly responsive, without sacrificing anyone's face :D`
+> A jQuery plugin that makes images truly responsive, without sacrificing anyone's face :D
 
-When images are used in a responsive container on web design, because of the container can change to any width:height ratio, a group shot could end up being cut off on people's faces, a nice photograph following "rule of third" could end up with no object in view. Responsive images face the challenge of how to keep the focused objects/area in view, this jquery plugin is here to solve the problem.
+When images are used in a responsive container on web design, because of the container can change to any width:height ratio, a group shot could end up being cut off on people's faces, a nice photograph following "rule of third" could end up with no object in view. Responsive images face the challenge of how to keep the focused objects/area in view, this jQuery plugin is here to solve the problem.
 
 ### Download
 * [responsify.js](https://raw.githubusercontent.com/wentin/ResponsifyJS/master/responsify.js)
