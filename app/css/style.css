@@ -11,6 +11,7 @@
   position: relative;
 }
 .canvasWrapper p {
+  display: inline-block;
   line-height: 20px;
   font-family: 'Source Code Pro';
   font-size: 12px;
