@@ -130,7 +130,7 @@ header .share.card h1 {
   height: 36px;
   border-radius: 50%;
   text-decoration: none;
-  box-sizing: border-radius;
+  box-sizing: border-box;
 }
 .icon:hover {
   text-decoration: none;
@@ -157,6 +157,14 @@ header .share.card h1 {
 .icon.github:before {
   content: "\e902";
   color: #45252A;
+}
+.icon.githubStar {
+  background: white;
+  border: solid 1px black;
+}
+.icon.githubStar:before {
+  content: "\e905";
+  color: black;
 }
 .icon.export {
   background: #FFFEDF;
@@ -300,6 +308,96 @@ footer .share .icon:before {
   width: 80px;
   line-height: 80px;
 }
+.overlay {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+}
+.module {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  top: -200px;
+  transition: all 0.4s ease;
+}
+.module .close.icon {
+  position: absolute;
+  box-sizing: border-box;
+  right:-36px;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  background-color: #FFFEDF;
+  border: solid 1px #884F67;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.module .close.icon:before {
+  content: "\e906";
+  color: #884F67;
+}
+.module h1 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: 36px;
+  padding: 0 18px;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background: #884F67;
+  color: #FFFEDF;
+}
+.module .moduleContent {
+  color: #884F67;
+  background: #FFFEDF;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  width: 364px;
+  padding: 12px 18px;
+  margin-top: 6px;
+  text-align: center;
+}
+.module .moduleContent p {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.module .moduleContent .icon {
+    background: #FFFEDF;
+    border: solid 1px #884F67;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    box-sizing: content-box;
+}
+.module .moduleContent .icon:before {
+    color: #884F67;
+    font-size: 32px;
+    width: 80px;
+    line-height: 80px;
+}
+body.overlayOn .overlay {
+  display: block;
+}
+body.overlayOn .module {
+  top: 200px;
+}
+header, main, footer {
+  transition: all 0.4s ease;
+}
+body.overlayOn header, 
+body.overlayOn main, 
+body.overlayOn footer {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
 
 @media screen and (max-width: 1040px) {
   .gifs {
