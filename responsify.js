@@ -53,14 +53,14 @@
       }
       $this.parent().css({
         "overflow": "hidden"
-      })
+      });
       $this.css({
         "position": "relative",
         "height": height,
         "width": width,
         "left": left,
         "top": top
-      })
+      });
     });
   };
 }( jQuery ));
