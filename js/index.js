@@ -18,7 +18,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-$(window).load(function() {
+$(document).ready(function() {
   $('a img').responsify();
   if(readCookie('popupshown') == null && !isMobile.any()){
 	  setTimeout(function(){ 
