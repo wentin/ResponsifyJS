@@ -20,9 +20,7 @@ var isMobile = {
 };
 
 $(document).ready(function(){
-
     $(window).load(function() {
-      console.log('loaded');
       $('a img').responsify();
       if(readCookie('popupshown') == null && !isMobile.any()){
         setTimeout(function(){ 
@@ -33,14 +31,12 @@ $(document).ready(function(){
       $('.overlay .close').click(function(){
         $('body').removeClass('overlayOn');
       })
-        
+
       $('[data_src]').each(function() {
           var data_src = $(this).attr("data_src");
           $(this).attr("src", $(this).attr("data_src")).removeAttr("data_src");
       });
     });
-
-
 });
 
 $(window).resize(function(){
