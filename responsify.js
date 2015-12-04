@@ -1,7 +1,7 @@
 (function ( $ ) {
   $.fn.responsify = function() {
     return this.each(function() {
-      var owdith, oheight,
+      var owidth, oheight,
           twidth, theight,
           fx1, fy1, fx2, fy2,
           width, height, top, left,
