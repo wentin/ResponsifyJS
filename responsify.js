@@ -5,16 +5,21 @@
           twidth, theight,
           fx1, fy1, fx2, fy2,
           width, height, top, left,
-          $this = $(this);
+          $this = $(this),
+          isImg = $this.is('img');
 
-      owidth = $this.width();
-      oheight = $this.height();
-      twidth = $this.parent().width();
-      theight = $this.parent().height();
       fx1 = Number($this.attr('data-focus-left'));
       fy1 = Number($this.attr('data-focus-top'));
       fx2 = Number($this.attr('data-focus-right'));
       fy2 = Number($this.attr('data-focus-bottom'));
+      
+      if(isNaN(fx1) || isNaN(fy1) || isNaN(fx2) || isNaN(fy2)) return;
+
+			owidth = ( isImg ? $this.width() : $this.attr('data-focus-width') );
+			oheight = ( isImg ? $this.height() : $this.attr('data-focus-height') );
+			twidth = ( isImg ? $this.parent().width() : $this.width() );
+			theight = ( isImg ? $this.parent().height() : $this.height() );
+      
       if( owidth/oheight > twidth/theight ) {
         var fwidth = (fx2-fx1) * owidth;
         if ( fwidth/oheight > twidth/theight ) {
@@ -51,16 +56,23 @@
           left = 0;
         }
       }
-      $this.parent().css({
-        "overflow": "hidden"
-      })
-      $this.css({
-        "position": "relative",
-        "height": height,
-        "width": width,
-        "left": left,
-        "top": top
-      })
+      if( isImg ){
+        $this.parent().css({
+          "overflow": "hidden"
+        })
+        $this.css({
+          "position": "relative",
+          "height": height,
+          "width": width,
+          "left": left,
+          "top": top
+        })
+      }else{
+				$this.css({
+					"background-size": width + 'px ' + height + 'px',
+					"background-position": left + 'px ' + top + 'px'
+				});
+			}
     });
   };
 }( jQuery ));
