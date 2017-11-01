@@ -15,10 +15,10 @@
       
       if(isNaN(fx1) || isNaN(fy1) || isNaN(fx2) || isNaN(fy2)) return;
 
-			owidth = ( isImg ? $this.width() : $this.attr('data-focus-width') );
-			oheight = ( isImg ? $this.height() : $this.attr('data-focus-height') );
-			twidth = ( isImg ? $this.parent().width() : $this.width() );
-			theight = ( isImg ? $this.parent().height() : $this.height() );
+      owidth = ( isImg ? $this.width() : $this.attr('data-focus-width') );
+      oheight = ( isImg ? $this.height() : $this.attr('data-focus-height') );
+      twidth = ( isImg ? $this.parent().width() : $this.width() );
+      theight = ( isImg ? $this.parent().height() : $this.height() );
       
       if( owidth/oheight > twidth/theight ) {
         var fwidth = (fx2-fx1) * owidth;
@@ -68,11 +68,11 @@
           "top": top
         })
       }else{
-				$this.css({
-					"background-size": width + 'px ' + height + 'px',
-					"background-position": left + 'px ' + top + 'px'
-				});
-			}
+        $this.css({
+          "background-size": width + 'px ' + height + 'px',
+          "background-position": left + 'px ' + top + 'px'
+        });
+      }
     });
   };
 }( jQuery ));
