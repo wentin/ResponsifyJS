@@ -10,11 +10,11 @@ When images are used in a responsive container on web design, because of the con
 
 ### Demo
 
-[http://responsifyjs.space/#demo](http://responsifyjs.space/#demo)
+[https://responsify.typedetail.com](https://responsify.typedetail.com)
 
 ### App
 
-[http://responsifyjs.space/app](http://responsifyjs.space/app)
+[https://responsify.typedetail.com/app](https://responsify.typedetail.com/app)
 
 Use this interactive web app to generate the focus area data
 
@@ -69,4 +69,3 @@ Responsify.js does the following:
 ###Other Project by Wentin
 * [Type Detail](http://typedetail.com/)
 * [underline.js](https://github.com/wentin/underlineJS)
-* [profession.is](http://profession.is/#/)
